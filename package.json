@@ -1,0 +1,14 @@
+{
+  "name": "oapp-token-cron-task",
+  "version": "1.0.1",
+  "description": "oapp相关定时任务操作",
+  "scripts": {
+    "release": "npm version patch && git push origin --tags && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.david-health.cn/DAVID-HEALTH/oapp-token-cron-task.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
