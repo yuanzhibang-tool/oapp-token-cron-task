@@ -1,0 +1,10 @@
+apps:
+  script: '/bin/bash'
+  name: 'oapp-token-cron-task/update_js_ticket'
+  autorestart: false
+  cron_restart: '*/1 * * * *'
+  args:
+    [
+      '-c',
+      'export LC_ALL=C.UTF-8 && export LANG=C.UTF-8 && export PIPENV_IGNORE_VIRTUALENVS=1 && pipenv run python update_js_ticket.py',
+    ]
