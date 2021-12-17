@@ -1,91 +1,16 @@
 proxies:
-  http: 'proxy_user:F2pkto4GtRPAqTpY@172.17.174.26:7789'
-  https: 'proxy_user:F2pkto4GtRPAqTpY@172.17.174.26:7789'
+  http: 'proxy_user:proxy_password@proxy_host:proxy_port'
+  https: 'proxy_user:proxy_password@proxy_host:proxy_port'
 storage_redis:
-  host: r-2zemvbc31wsnkqz61z.redis.rds.aliyuncs.com
-  port: 6379
-  auth: VDclryKzxE5m7eZv
+  host: redis_host
+  port: redis_port
+  auth: redis_auth
 oauth_api:
-  get_server_access_token_url: 'https://oauth-open.david-health.cn/OAuth2/token'
-  get_user_access_token_url: 'https://oauth-open.david-health.cn/OAuth2/token'
-  get_js_ticket_url: 'https://oauth-open.david-health.cn/OAuth2/ticket'
-  refresh_user_token_url: 'https://oauth-open.david-health.cn/OAuth2/refreshtoken'
+  get_server_access_token_url: 'https://oauth.yuanzhibang.com/OAuth2/token'
+  get_user_access_token_url: 'https://oauth.yuanzhibang.com/OAuth2/token'
+  get_js_ticket_url: 'https://oauth.yuanzhibang.com/OAuth2/ticket'
+  refresh_user_token_url: 'https://oauth.yuanzhibang.com/OAuth2/refreshtoken'
 app_info:
-  - app_id: '100269'
-    app_secret: 2f7b284f87a77369044a4ffcaa0c27b2b256a25e
-    app_name: 个人应用测试
-  - app_id: '100270'
-    app_secret: efa429c7c1d73d779590ff8cbe7670f223761a43
-    app_name: 团队应用测试
-  - app_id: '100262'
-    app_secret: 369044a4ffcaa0c27b2b256a25e2f7b284f87a77
-    app_name: 中药方剂
-  - app_id: '101139'
-    app_secret: c2f4db81d626ba37a5e4205a9313009584572947
-    app_name: 临床指南
-  - app_id: '101107'
-    app_secret: 282351b4215fe27751282f6520ace3c6c85daece
-    app_name: 云心电
-  - app_id: '101116'
-    app_secret: 8c4df1fc44a042ee441414276c1ea36fdf05a522
-    app_name: 公告
-  - app_id: '101109'
-    app_secret: 7062b83243c9920744cecde287e3a8e7130dc23b
-    app_name: 内部应用
-  - app_id: '100264'
-    app_secret: 3a0c27b2b256a25e2f7b284f87a7769044a4ffca
-    app_name: 化学检查
-  - app_id: '101132'
-    app_secret: 5a8c50badfa9096cfbb0ce56f0222964d35415f8
-    app_name: 医学会议
-  - app_id: '100274'
-    app_secret: 3a0c27b2b256a25e2f7b284f87a7769044a4ffca
-    app_name: 医生笔记
-  - app_id: '100271'
-    app_secret: b2b256a25e2f7b369044a4ffcaa0c27284f87a77
-    app_name: 卫生标准
-  - app_id: '101140'
-    app_secret: 05905c7fd9c46e78dbd9f077173e4447c09dbff0
-    app_name: 图文资料
-  - app_id: '100266'
-    app_secret: 6a25e3a0c27b2b252f7b284f87a7769044a4ffca
-    app_name: 检查单
-  - app_id: '100265'
-    app_secret: 0c27b2b2563aa25e2f7b284f87a7769044a4ffca
-    app_name: 物理检查
-  - app_id: '101155'
-    app_secret: 94f774893cae6cde86d31ea9d4c7d7d11665704a
-    app_name: 签到
-  - app_id: '101151'
-    app_secret: fb4a3f576e4e42158904e23994c67b4300417d34
-    app_name: 医学导航
-  - app_id: '101144'
-    app_secret: 378a8e26e85fd50a1044433191a67aebc64d73c6
-    app_name: 院长信箱
-  - app_id: '101158'
-    app_secret: ebe496b0168ca433f544c648f3e7711d4d235085
-    app_name: 视力管理
-  - app_id: '101163'
-    app_secret: 74ef355a5c78880240087c700f5953e712ba42ae
-    app_name: 医学公式
-  - app_id: '101138'
-    app_secret: b03daf4fab1fb147eba5253e5af488e7dcd54988
-    app_name: 中药处方
-  - app_id: '101165'
-    app_secret: dd4e064601908b91c865e69774fcf96a0691a14e
-    app_name: 中药植物图库
-  - app_id: '101166'
-    app_secret: efaddac1e60b8db38adf4a41442f2df6213ac8e9
-    app_name: 心电事件判读
-  - app_id: '101168'
-    app_secret: 47aa68069a67ceb74512180232621e754e093b61
-    app_name: 孙兴国慢病
-  - app_id: '101167'
-    app_secret: 2335c09675da7004e20f9b6a3190360ec8b412a9
-    app_name: 猿之棒统一应用
-  - app_id: '101169'
-    app_secret: 593f18a20824e08790c6c83c46925e07909f176b
-    app_name: 代码寄存器
-  - app_id: '101170'
-    app_secret: 26ae9811f018780760a0ee63ea9ee4c66a3fad10
-    app_name: fast-github
+  - app_id: 'your_app_id'
+    app_secret: 'your_app_secret'
+    app_name: 'your_app_name'
