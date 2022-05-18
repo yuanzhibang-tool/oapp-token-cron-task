@@ -7,8 +7,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.david-health.cn/DAVID-HEALTH/oapp-token-cron-task.git"
+    "url": "https://github.com/yuanzhibang-tool/oapp-token-cron-task.git"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "yuanzhibang.com",
+  "license": "Apache License 2.0"
 }
