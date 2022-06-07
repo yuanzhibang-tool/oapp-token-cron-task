@@ -24,5 +24,5 @@ RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
 RUN apt install -y nodejs python3 python3-pip pipenv
 RUN npm install -g npm
 RUN npm install -g pm2
-
-# CMD ["pm2-runtime", "start", "pm2.json"]
+ADD scripts /scripts
+ENTRYPOINT cd /scripts && ./run.sh
