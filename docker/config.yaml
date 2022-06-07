@@ -1,6 +1,6 @@
 proxies: #代理配置,进行OAuth2接口操作使用该接口,可以使用docker快速部署代理:https://hub.docker.com/r/yuanzhibang/proxy
-  http: 'proxy_user:proxy_password@proxy_host:proxy_port'
-  https: 'proxy_user:proxy_password@proxy_host:proxy_port'
+  http: 'http://proxy_user:proxy_password@proxy_host:proxy_port' # 必须携带http开头,否则会报错
+  https: 'http://proxy_user:proxy_password@proxy_host:proxy_port' # 必须携带http开头,否则会报错
 storage_redis: #缓存token信息的redis服务器可以使用docker快速部署:https://hub.docker.com/_/redis
   host: redis_host
   port: redis_port
