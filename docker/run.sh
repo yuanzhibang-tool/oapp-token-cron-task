@@ -9,7 +9,5 @@ oapp-token-cron-task:default \
 
 # !第二种方式,直接通过打包好的公开镜像执行
 docker run -d --restart always \
--p 7733:7789 \
---env PROXY_USER=123 \
---env PROXY_PASSWORD=121 \
+-v /root/github/oapp-token-cron-task/docker/config.yaml:/scripts/config.yaml
 yuanzhibang/oapp-token-cron-task:default \
