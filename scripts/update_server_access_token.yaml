@@ -1,0 +1,6 @@
+apps:
+  script: '/bin/bash'
+  name: 'oapp-token-cron-task/update_server_access_token'
+  autorestart: false
+  cron_restart: '*/1 * * * *'
+  args: ['-c', 'python3 update_server_access_token.py']

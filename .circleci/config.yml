@@ -1,0 +1,20 @@
+version: 2.1
+orbs:
+  docker: circleci/docker@1.4.0
+jobs: # a basic unit of work in a run
+  build-oapp-token-cron-task: # your job name
+    machine:
+      image: ubuntu-2004:current
+    steps: # a series of commands to run
+      - checkout # pull down code from your version control system.
+      - docker/check:
+          docker-username: DOCKERHUB_LOGIN # DOCKER_LOGIN is the default value, if it exists, it automatically would be used.
+          docker-password: DOCKERHUB_PASSWORD
+      - run:
+          name: build oapp-token-cron-task
+          command: cd docker && ./build.sh
+workflows:
+  version: 2
+  build-oapp-token-cron-task:
+    jobs:
+      - build-oapp-token-cron-task
