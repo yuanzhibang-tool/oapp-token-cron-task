@@ -23,3 +23,25 @@ pm2 start update_server_access_token.yaml
 pm2 start update_js_ticket.yaml
 pm2 save
 ```
+
+---
+
+### REDIS 中缓存 token 内容格式
+
+_js_ticket:_
+
+| key                                         | value                                                                                                         |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `type/js_ticket_info/app_id/开放平台应用id` | `{"js_ticket": "082675bb1bcbdc3b824fb040abdfd4e4b5e36e422af60365949e17e372cbcd4c", "expires_in": 1654575742}` |
+
+注意:`expires_in` 为过期的 `unix` 时间戳,后台无需关系该过期日期,该定时任务会更新,保证该 `code` 为最新可用的 `code`
+
+---
+
+_server_access_token:_
+
+| key                                                    | value                                                                                                                   |
+| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| `ttype/server_access_token_info/app_id/开放平台应用id` | `{"server_access_token": "fa4d97f4872e8e2a39ba742ad6792f042dd825c76c85057808e1c68c17c31cdc", "expires_in": 1654576906}` |
+
+注意:`expires_in` 为过期的 `unix` 时间戳,后台无需关系该过期日期,该定时任务会更新,保证该 `code` 为最新可用的 `code`
