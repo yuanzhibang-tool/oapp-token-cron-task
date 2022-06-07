@@ -1,0 +1,16 @@
+proxies:
+  http: 'proxy_user:proxy_password@proxy_host:proxy_port'
+  https: 'proxy_user:proxy_password@proxy_host:proxy_port'
+storage_redis:
+  host: redis_host
+  port: redis_port
+  auth: redis_auth
+oauth_api:
+  get_server_access_token_url: 'https://oauth.yuanzhibang.com/OAuth2/token'
+  get_user_access_token_url: 'https://oauth.yuanzhibang.com/OAuth2/token'
+  get_js_ticket_url: 'https://oauth.yuanzhibang.com/OAuth2/ticket'
+  refresh_user_token_url: 'https://oauth.yuanzhibang.com/OAuth2/refreshtoken'
+app_info:
+  - app_id: 'your_app_id'
+    app_secret: 'your_app_secret'
+    app_name: 'your_app_name'
