@@ -25,6 +25,11 @@ RUN apt install -y nodejs python3 python3-pip pipenv
 RUN npm install -g npm
 RUN npm install -g pm2
 RUN pm2 startup
+RUN pm2 install pm2-logrotate
+RUN pm2 set pm2-logrotate:max_size 50M
+RUN pm2 set pm2-logrotate:retain 10
+RUN pm2 set pm2-logrotate:compress true
+
 ADD scripts /scripts
 RUN cd /scripts && pipenv install --system
 ENTRYPOINT cd /scripts && ./run.sh

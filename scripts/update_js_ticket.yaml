@@ -4,3 +4,4 @@ apps:
   autorestart: false
   cron_restart: '*/1 * * * *'
   args: ['-c', 'python3 update_js_ticket.py']
+  log_date_format: 'YYYY-MM-DD HH:mm:ss'
