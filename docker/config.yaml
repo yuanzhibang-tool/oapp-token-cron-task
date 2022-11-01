@@ -5,6 +5,7 @@ storage_redis: #缓存token信息的redis服务器可以使用docker快速部署
   host: redis_host
   port: redis_port
   auth: redis_auth
+  db: 0
 oauth_api: #无需更改该内容
   get_server_access_token_url: 'https://oauth.yuanzhibang.com/OAuth2/token'
   get_user_access_token_url: 'https://oauth.yuanzhibang.com/OAuth2/token'
